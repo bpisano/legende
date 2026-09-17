@@ -35,6 +35,8 @@ Exceptions where text is **required** (never remove, never shorten past meaning)
 
 Write directly in the target language. Never draft in English and translate. Use the words the target user actually says out loud, follow platform vocabulary, prefer common English loanwords over invented or stiff equivalents, respect each language's typography. Rules per language: `references/native.md`.
 
+French: before `? ! : ;` and inside `« »` the space is **non-breaking** — write it as an escape (` ` in JSON/JS, `\u{202F}` in Swift), never a typed space.
+
 ## 3. Apply
 
 ### Auto mode (writing UI inside another task)

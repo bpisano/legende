@@ -5,8 +5,7 @@ focus:
   path: out/DeleteAlert.swift
 ---
 
-The final code:
-- uses a confirm button labeled with the exact verb (e.g. "Delete") with a destructive role,
-- has a title naming the object via album.name (not "Warning", not "Are you sure?"),
-- states concretely what is lost using the photo count (e.g. "12 photos will be deleted"), with proper pluralization or a localized format,
-- has no humor, emoji or filler.
+Pass if ALL of these hold (be lenient on style, strict on these facts):
+- the confirm button is a precise verb such as "Delete" (not "OK"/"Yes"/"Confirm"),
+- the title references the album name (e.g. via album.name), not "Warning" or "Are you sure?",
+- somewhere the photo count is used to say photos will be lost/deleted. Any pluralization technique counts: `^[… photo](inflect: true)`, a ternary, a stringsdict/catalog. Omitting the message when the album has no photos is acceptable.

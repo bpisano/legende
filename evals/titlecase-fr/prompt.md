@@ -1,7 +1,7 @@
 ---
 description: English Title Case and spacing habits are fixed in French copy.
 tags: [native, fr, typography]
-max_turns: 8
+max_turns: 12
 allowed_tools: [Read, Glob, Grep, Skill, Write]
 ---
 

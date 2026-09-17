@@ -66,6 +66,20 @@ Structural calques to avoid:
 
 - **Sentence case only.** "Mes projets", never "Mes Projets". French has no Title Case.
 - **Non-breaking space before `: ; ! ?`** and inside guillemets `« … »`. Use a narrow no-break space (U+202F) when the platform renders it; otherwise U+00A0. Never a regular space (line breaks before "?").
+  A typed space is always a regular U+0020 — **write the escape explicitly** so it survives:
+
+  | File | Escape | Example |
+  |---|---|---|
+  | JSON, `.xcstrings`, JS/TS | ` ` | `"Supprimer ?"`, `"« {name} »"` |
+  | Swift literal | `\u{202F}` | `"Supprimer\u{202F}?"` |
+  | `.strings` | `\U202F` | `"Supprimer\U202F?"` |
+  | Android XML | ` ` | `Supprimer ?` |
+  | Kotlin | ` ` | `"Supprimer ?"` |
+  | Raw HTML markup only | `&#x202F;` | `<p>Supprimer&#x202F;?</p>` |
+
+  i18n files for web apps (i18next, react-intl, vue-i18n JSON) are **JSON, not HTML**: use ` `. An entity there renders literally as `&#8239;`.
+
+  In a chat answer with no file, write the escape too, or state that the space is U+202F.
 - **Guillemets** `« »` for quotes, not `"…"`.
 - **Typographic apostrophe** `’` if the project already uses it; stay consistent.
 - **Accented capitals**: "État", "À venir", "Écran".
