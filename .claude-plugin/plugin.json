@@ -1,0 +1,14 @@
+{
+  "name": "legende",
+  "description": "UI/UX design expert for Claude Code. Starts with wording: interface copy that is short, native, on-mood — and absent when the UI can show it instead.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Benjamin Pisano"
+  },
+  "repository": "https://github.com/bpisano/legende",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "wording", "copywriting", "ux-writing", "microcopy", "localization"],
+  "skills": [
+    "./skills/wording"
+  ]
+}

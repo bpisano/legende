@@ -1,0 +1,23 @@
+{
+  "name": "legende",
+  "owner": {
+    "name": "Benjamin Pisano"
+  },
+  "metadata": {
+    "description": "UI/UX design expert plugins. Design, en légende.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "legende",
+      "source": "./",
+      "description": "UI/UX design expert. Wording: short, native, on-mood interface copy — or no copy at all when the UI can show it.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Benjamin Pisano"
+      },
+      "keywords": ["design", "ui", "ux", "wording", "copywriting", "ux-writing", "microcopy", "localization"],
+      "category": "design"
+    }
+  ]
+}
